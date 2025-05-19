@@ -58,9 +58,42 @@ Emergency Signaling System </br>
 Weighing Machines </br>
 
 ## CIRCUIT DIAGRAM
+![exp 1 iot](https://github.com/user-attachments/assets/ae8c0c28-c724-41a1-b70f-fe50bcddc96d)
+
 
 ## PROGRAM
+![exp 1 iot pro](https://github.com/user-attachments/assets/1b577577-9921-4003-8da4-32d9f78ade84)
+```
+int buttonState = 0;        
+void setup() {
+  pinMode(13, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(0, INPUT);
+}
+void loop() {
+    buttonState = digitalRead(0);
+  if (buttonState == HIGH)
+ {
+       digitalWrite(13, HIGH);
+       digitalWrite(7, LOW);
+  } else
+{
+   
+    digitalWrite(13, LOW);
+    digitalWrite(7, HIGH);
+  }
+}
+```
+
 
 ## OUTPUT
+LED ON: 
+![led on 1](https://github.com/user-attachments/assets/eca2031a-9378-4266-a4bc-b7304bd042b7)
+
+LED OFF:
+![led off 1](https://github.com/user-attachments/assets/dcb1b10b-9a42-4a8c-ac82-f342b88f16cd)
+
 
 ## RESULT
+The LED control system using Arduino and push button was successfully implemented and simulated in Proteus.
+
